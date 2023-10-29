@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL list</title>
+</head>
+<body>
+    <h1>URL List</h1>
+    <ol>
+        {% for dict in URLs %}
+        <li>{{dict.short_url}} : {{dict.full_url}}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

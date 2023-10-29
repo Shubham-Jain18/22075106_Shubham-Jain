@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+</head>
+<style>
+    form {
+        width: 400px;
+        height: 300px;
+        background-color: #51e2f5;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        margin: auto;
+        padding: 20px 0;
+        border-style: solid;
+
+    }
+    button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    a {
+        background-color:white;
+
+    }
+</style>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <h1>URL Shortener</h1>
+    <input type="text" name="full_url" ><br>
+    <button type="submit">Shorten</button>
+
+
+    <a href="{{a_url}}">{{short_url}}</a>
+
+
+</form>
+</body>
+</html>
